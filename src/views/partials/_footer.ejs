@@ -1,0 +1,147 @@
+
+
+
+
+
+
+
+<div class="footer-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-top-address wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">
+                    <div class="header-logo" style=" text-align: center;border-bottom: 1px dotted rgba(247, 12, 38, 0.24);">
+                        <a href="index.html">
+                            <img src="/images/logo.png" alt="Your Shop Logo" class="img img-responsive" style="max-width: 100px">
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i> Beiró 2347, Villa Devoto, Capital Federal</li>
+                        <li><i class="fa fa-mobile"></i> +8801951233084 </li>
+                        <li><i class="fa fa-phone"></i> +222 11 4444 </li>
+                        <li><i class="fa fa-envelope-o"></i> <a href="mailto:manirujjamanakash@gmail.com"> amgpapeleria@gmail.com</a></li>
+                    </ul> 
+                </div>
+                
+
+            </div>
+            <div class="col-md-8">
+                <div class="subscribe wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10">
+                    <h3>Create una cuenta para poder comprar los productos que desees</h3>
+                    <a href="users/signup" class="btn btn-red"  >Registrate</a>                   
+                </div>
+                <div class="all-footer-links">
+                    <div class="col-md-4">
+                        <h3>Nuestro Negocio</h3>
+                        <ul>
+                            <li><a href="about.html">Sobre nosotros</a></li>
+                            <li><a href="contact.html">Contacto</a></li> 
+                            <li><a href="privacy.html"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 footer-grids">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="login.html">Returns</a></li> 
+                            <li><a href="faq.html" class="link">FAQ</a></li>
+                            <li><a href="#">Site Map</a></li>
+                            <li><a href="login.html">Order Status</a></li>
+                        </ul> 
+                    </div>
+                    <div class="col-md-4 footer-grids">
+                        <h3>Métodos de pago</h3>
+                        <ul>
+                            <li><i class="fa fa-paypal" aria-hidden="true"></i> MercadoPago</li>
+                            <li><i class="fa fa-money" aria-hidden="true"></i> Débito</li>
+                            <li><i class="fa fa-pie-chart" aria-hidden="true"></i>Crédito</li>
+                            <li><i class="fa fa-credit-card" aria-hidden="true"></i> Debit/Credit Card</li>
+                        </ul>  
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                
+            </div>
+        </div>
+        
+
+
+    </div>
+</div> <!-- End Footer top -->
+
+
+
+<div class="footer-bottom">
+    <p class="footer-credit">
+        &copy;<script type="text/javascript">document.write(new Date().getFullYear())</script> - All rights reserved <a href="index.html">Your shop</a> | Designed by <a href="https://maniruzzaman-akash.blogspot.com"> Jor Hess</a>
+    </p>
+</div> <!--End Footer bottom -->
+
+<div class="scroll">
+    <a href="#top" class="scroll-to-top hidden">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+
+
+</div> <!-- End wrapper -->
+
+
+
+<!-- Scripts -->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails"
+    });
+  });
+   
+</script>
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+
+<script src="/js/jquery.flexslider.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+
+<script src="/js/wow.min.js"></script>
+
+<script src="/js/imagezoom.js" type="text/javascript"></script>
+
+
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/webslidemenu.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script>
+	<% if (flash.success && flash.success.length > 0) {%>
+		 new Noty({
+			 theme: 'relax',
+			 text: "<%= flash.success %>",
+			 type: 'success',
+			 layout: 'topRight',
+			 timeout: 2000
+			 
+		 }).show();    
+	 <%} %>
+
+	 <% if (flash.error && flash.error.length > 0) {%>
+		 new Noty({
+			 theme: 'relax',
+			 text: "<%= flash.error %>",
+			 type: 'error',
+			 layout: 'topRight',
+			 timeout: 2000
+			 
+		 }).show();    
+	 <%} %>
+
+	 
+ </script>
+</body>
+</html>
